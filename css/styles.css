@@ -2,17 +2,18 @@
     margin:0;
     padding: 0;
 }
-/*BODY*/
+/* ----------------- BODY ---------------------- */
 
 body{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-/*HEADER*/
+/* ---------------- HEADER---------------------- */
 
 .header{
     background-color: #41584B;
 }
+/*nav*/
 .headernav{
     background-color:#41584B;
 }
@@ -21,6 +22,7 @@ body{
     text-decoration: none;
     color: #B7A56F;
     font-size: 16px;
+    padding: 10px;
 
 }
 
@@ -39,13 +41,26 @@ body{
     max-height: 60px;
     margin-top: 10px;
 }
-/*BOTON RESERVA*/
+
+/* nav version mobile */
+@media only screen and (max-width: 600px){
+    .menucelu{
+        display: block;
+        justify-content: flex-start;
+    }
+    .headernav a{
+        padding: 4px;
+        color: antiquewhite;
+    }
+    
+}
+
+/*--boton reserva--*/
 
 .botonreserva{
     background-color: #B7A56F;
     color: aliceblue;
-    font-weight: bolder;
-
+    font-weight: bolder; 
 }
 
 .botonreserva:hover{
@@ -54,8 +69,18 @@ body{
     font-weight: bolder;
 
 }
+    /* boton reserva version mobile */
+    @media only screen and (max-width: 600px){
+        .botonreserva{
+            display: flex;
+            justify-content: center;
+            
+        }
+        
+}
 
-/* MAIN */
+
+/* -------------------------- MAIN -------------------------------  */
 
 .imagen_fondo{
     background-image: url(../images/background.jpg);
@@ -69,18 +94,16 @@ body{
 
 h1 {
     color: white;
-    padding-top: 500px;
+    padding-top: 40%;
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
-
 }
 
-h2{
+h2 {
     color: white;
     font-size: x-large;
 }
 
-/*Main: formato de los h3*/
 h3{
     color: #B7A56F;
     font-family: "oswald";
@@ -88,17 +111,22 @@ h3{
     padding: 10px;
     margin-top: 20px;
     margin-left: 20px;
-
 } 
 
 /*parrafo de la cabaña*/
 .texto{
     font-size: larger;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+    /* texto version tablet*/
+    @media screen and (min-width: 750px) and (max-width:990px) {
+        .texto{
+        font-size: 14px;
+        }
 
 }
-
-/*FOOTER*/
+/* --------------------- FOOTER ----------------------- */
 
 .footersection{
     background-color: #41584B;
@@ -107,7 +135,9 @@ h3{
 .textologo{
     color: #B7A56F;
     font-size: large;
+    
 }
+
 
 .images_footer{
     max-height: 30px;
