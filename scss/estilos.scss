@@ -1,0 +1,138 @@
+@import "../scss/footer.scss";
+
+
+
+/* --- variables */
+        /* variables para los colores de la pagina*/
+        $verde-isla: #41584B;
+        $dorado: #B7A56F;
+
+        /* letras */
+        $letratitulos: 'Oswald', sans-serif;
+        $letratexto: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+
+
+*{
+    margin:0;
+    padding: 0;}
+
+/* ---------------- HEADER---------------------- */
+
+.header{
+    background-color: $verde-isla;
+}
+/*nav*/
+
+.headernav{
+    background-color:$verde-isla;
+    a {
+        text-decoration: none;
+        color: $dorado;
+        font-size: 18px;
+        padding: 13px; }
+    
+}
+
+.logocabana{
+    max-height: 100px;
+    margin-top: 5px;
+}
+
+/* nav version mobile */
+@media only screen and (max-width: 600px){
+    .menucelu{
+        display: block;
+        justify-content: flex-start;
+    }
+    .headernav a{
+        padding: 4px;
+        color: antiquewhite;
+    }
+    
+}
+
+/*--boton reserva--*/
+
+.botonreserva{
+    background-color: $dorado;
+    color: aliceblue;
+    font-weight: bolder; 
+
+    &:hover{
+        background-color: #e6e2de;
+        color: $verde-isla;
+        font-weight: bolder;
+
+    }
+
+}
+
+    /* boton reserva version mobile */
+    @media only screen and (max-width: 600px){
+        .botonreserva{
+            display: flex;
+            justify-content: center;
+            
+        }
+        
+}
+
+
+/* -------------------------- MAIN -------------------------------  */
+
+.imagen_fondo{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 80%;
+}
+
+h1 {
+    color: white;
+    padding-top: 40%;
+    font-family: $letratitulos;
+    font-size: 50px;
+}
+
+h2 {
+    color: white;
+    font-size: x-large;
+}
+
+h3{
+    color: $dorado;
+    font-family: $letratitulos;
+    font-size: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+} 
+
+/*parrafo de la cabaña*/
+.texto{
+    font-size: larger;
+    font-family: $letratexto;    
+}
+    /* texto version tablet*/
+    @media screen and (min-width: 750px) and (max-width:990px) {
+        .texto{
+        font-size: 14px;
+        }
+
+}
+
+
+/* ------pagina de actividades---- */
+
+.textoactividades{
+    color: $verde-isla;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}

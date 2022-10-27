@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/*variables para los colores*/
+/* ------- especificaciones del footer ---------- */
+.footersection {
+  background-color: #41584B; }
+
+.textologo {
+  display: flex;
+  align-items: center;
+  color: #B7A56F;
+  font-size: 25px; }
+
+.images_footer {
+  max-height: 30px;
+  margin-bottom: 30px;
+  padding: 5px; }
+
+/* --- variables */
+/* variables para los colores de la pagina*/
+/* letras */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* ---------------- HEADER---------------------- */
+.header {
+  background-color: #41584B; }
+
+/*nav*/
+.headernav {
+  background-color: #41584B; }
+  .headernav a {
+    text-decoration: none;
+    color: #B7A56F;
+    font-size: 18px;
+    padding: 13px; }
+
+.logocabana {
+  max-height: 100px;
+  margin-top: 5px; }
+
+/* nav version mobile */
+@media only screen and (max-width: 600px) {
+  .menucelu {
+    display: block;
+    justify-content: flex-start; }
+  .headernav a {
+    padding: 4px;
+    color: antiquewhite; } }
+
+/*--boton reserva--*/
+.botonreserva {
+  background-color: #B7A56F;
+  color: aliceblue;
+  font-weight: bolder; }
+  .botonreserva:hover {
+    background-color: #e6e2de;
+    color: #41584B;
+    font-weight: bolder; }
+
+/* boton reserva version mobile */
+@media only screen and (max-width: 600px) {
+  .botonreserva {
+    display: flex;
+    justify-content: center; } }
+
+/* -------------------------- MAIN -------------------------------  */
+.imagen_fondo {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 80%; }
+
+h1 {
+  color: white;
+  padding-top: 40%;
+  font-family: "Oswald", sans-serif;
+  font-size: 50px; }
+
+h2 {
+  color: white;
+  font-size: x-large; }
+
+h3 {
+  color: #B7A56F;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 20px; }
+
+/*parrafo de la cabaña*/
+.texto {
+  font-size: larger;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+/* texto version tablet*/
+@media screen and (min-width: 750px) and (max-width: 990px) {
+  .texto {
+    font-size: 14px; } }
+
+/* ------pagina de actividades---- */
+.textoactividades {
+  color: #41584B;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center; }

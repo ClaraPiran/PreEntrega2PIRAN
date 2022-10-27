@@ -1,0 +1,22 @@
+/*variables para los colores*/
+$verde-isla: #41584B;
+$dorado: #B7A56F;
+
+/* ------- especificaciones del footer ---------- */ 
+
+.footersection{
+    background-color: $verde-isla;
+}
+
+.textologo{
+    display: flex;
+    align-items: center;
+    color: $dorado;
+    font-size: 25px;    
+}
+
+.images_footer{
+    max-height: 30px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
